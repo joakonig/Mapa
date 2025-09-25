@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Tienda</title>
+</head>
+<body>
+  <h1>¡Bienvenido a mi tienda digital!</h1>
+
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="jvargass@fen.uchile.cl">
+    <input type="hidden" name="item_name" value="Archivo Premium">
+    <input type="hidden" name="amount" value="5.00">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="notify_url" value="https://TU-BACKEND.onrender.com/ipn">
+    <input type="hidden" name="return" value="https://joakonig.github.io/Mapa/gracias.html">
+    <input type="submit" value="Comprar ahora con PayPal">
+  </form>
+</body>
+</html>
